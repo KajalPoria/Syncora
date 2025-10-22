@@ -1,0 +1,158 @@
+Project Name: Syncora - AI Operation Command Centre
+
+
+Project Description:
+Syncora is a sophisticated, AI-powered dashboard that serves as a central command center for managing professional communications and schedules. It integrates deeply with Google's ecosystem (Gmail, Calendar, Drive) to automate workflow, prioritize information, and provide intelligent assistance, all within a sleek, modern, and user-customizable interface.
+
+
+Core Features & Implementation Details:
+
+
+Gmail Integration & Priority Inbox:
+
+
+Integrate with the user's Gmail account via Google API.
+
+
+Implement an AI-powered filtering system that scans incoming emails and assigns a "Priority" level (e.g., High, Medium, Low) based on the presence of specific keywords and terms (e.g., "urgent," "action required," "meeting," client names, project names).
+
+
+The main dashboard must feature a "Priority Inbox" widget that displays these sorted emails, with high-priority emails prominently highlighted.
+
+
+Smart Meeting Scheduler & Calendar Integration:
+
+
+Collaborate with Gmail to automatically scan email content for future meeting links (Google Meet, Zoom, Teams, etc.) or mentions of offline meetings/seminars.
+
+
+The AI must parse the email to extract and accurately record: Date, Time, Duration, Venue/Link, and Attendee Names (Client/Guest names).
+
+
+Automatically create these events in the user's linked Google Calendar.
+
+
+The calendar event title should be formatted as: Meeting with [Client/Guest Name] - [Brief Context].
+
+
+Implement a smart reminder system that sends timely in-app and push notifications before the meeting starts.
+
+
+Integrated AI Chatbot:
+
+
+Include a dedicated, always-accessible chatbot widget/panel within the application.
+
+
+This chatbot should be capable of answering user queries about their schedule, unread email count, priority tasks, and general questions.
+
+
+Sleek User Authentication:
+
+
+Implement a smooth, visually appealing login/signup screen.
+
+
+Primary authentication will be via "Sign in with Google" for a seamless experience.
+
+
+Light & Dark Mode Toggle:
+
+
+Provide a user-controlled toggle to switch between a Light theme and a Dark theme.
+
+
+The color scheme for both modes must be modern and easy on the eyes.
+
+
+Modern UI/UX & Color Scheme:
+
+
+Overall Vibe: Modern, sleek, and professional. The feel should be that of a high-end command center.
+
+
+Color Palette: While blue/purple is common, let's opt for a more distinctive and premium palette.
+
+
+Dark Theme: Use a very dark charcoal/navy (#1E2A3A) as the primary background. Use a lighter slate gray for cards and widgets. Accent color should be a subtle, shimmering gold (#E0B36A) for buttons, highlights, and important icons.
+
+
+Light Theme: Use a crisp off-white (#F8FAFC) as the primary background. Use a clean white for cards with subtle gray borders. Accent color should remain the same gold (#E0B36A) for consistency and premium feel.
+
+
+Use this gold accent very subtly to draw attention to key actions and priorities without being overwhelming.
+
+
+Customizable Dashboard with Widgets:
+
+
+The home screen is a dashboard composed of resizable and rearrangeable widgets (e.g., Email Inbox, Calendar View, Task List, Chatbot).
+
+
+Users must be able to drag to reposition and drag the edges to resize these widgets. Their layout should be saved automatically.
+
+
+Real-Time Notification Panel:
+
+
+Include a notification bell icon in the header.
+
+
+When clicked, it reveals a panel showing a log of real-time alerts.
+
+
+Trigger in-app popup/toast notifications for high-priority events like a "High Priority Email Received" or "Meeting Starting in 10 Minutes."
+
+
+AI Email Summarizer:
+
+
+Inside the Priority Inbox widget, each email should have a button (e.g., "Summarize" with a magic wand icon).
+
+
+Clicking this button uses AI to generate a concise, bullet-point summary of the email's key points, displayed in a popover/modal.
+
+
+AI Task Detection & Widget:
+
+
+Automatically scan the content of prioritized emails to detect potential to-do items or action points (e.g., "Please send the report," "Need feedback on the design").
+
+
+Kajal ✌️, [22-10-2025 16:49]
+Compile these detected items into a "Task List" section.
+
+
+This Task List should also be available as a standalone widget that users can add to their dashboard.
+
+
+Two-Factor Authentication (2FA):
+
+
+As an extra security layer, provide an option in the user settings to enable 2FA (Time-based One-Time Password) via an authenticator app.
+
+
+Google Drive Linker:
+
+
+For scheduled meetings, the AI should scan the email conversation and the user's Google Drive to find relevant documents (e.g., proposals, decks, spreadsheets mentioned in the email).
+
+
+These relevant documents should be automatically attached to the corresponding event in Google Calendar.
+
+
+Animated Loading Screen:
+
+
+Design a custom, AI-themed animation for the initial app loading screen.
+
+
+Animation Concept: A minimalist, glowing neural network pattern that pulses and connects, or a sleek, spinning "Syncora" logo with the gold accent, giving a sense of intelligence and power.
+instead of showing the demo data, show the real processing data entered by the user. even in the email section, show the function of email summarization by showing the time, date, location of that meeting enlisted in the email. even when i switch to the dashboard section, add the functionality to the syncora logo to send me back to the landing page. integrate open gemini  function into the AI assistant (use LLM models or NLP model to answer the users questions in the AI assistant section)
+instead of showing the demo data, show the real processing data entered by the user. even in the email section, show the function of email summarization by showing the time, date, location of that meeting enlisted in the email. even when i switch to the dashboard section, add the functionality to the syncora logo to send me back to the landing page. integrate open gemini  function into the AI assistant (use LLM models or NLP model to answer the users questions in the AI assistant section)
+1.on the loading screen, remove "get started free" and change it to "get started" and redirect it to the authentication page.
+2. the login feature and user backend is still not working. remove the demo altogether. i want real time user signups and signins
+1.
+dont make the user manually add the emails and their details. ask user for permission to connect the gmail account automatically after signing in, and then automatically add emails by linking users gmail account.
+2.
+also link the app automatically to users google calendar and google meet accounts for collecting info about upcoming meetings. i dont want any manual intervention of the user.
